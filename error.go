@@ -24,7 +24,6 @@ import (
 )
 
 // Error prints an error message and doesnt exit.
-
 func Error(arguments ...any) {
 	loggerConfig.FatalTextColor.Fprint(
 		os.Stderr,
@@ -35,7 +34,6 @@ func Error(arguments ...any) {
 }
 
 // Errorf prints a formatted error message and doesnt exit
-
 func Errorf(format string, arguments ...any) {
 	loggerConfig.FatalTextColor.Fprint(
 		os.Stderr,
@@ -47,7 +45,6 @@ func Errorf(format string, arguments ...any) {
 
 // Errorln prints an error message followed by a newline
 // and doesnt exit
-
 func Errorln(arguments ...any) {
 	loggerConfig.FatalTextColor.Fprint(
 		os.Stderr,

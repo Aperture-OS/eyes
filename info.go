@@ -34,7 +34,6 @@ func Info(arguments ...any) {
 }
 
 // Infof prints a formatted informational message.
-
 func Infof(format string, arguments ...any) {
 	loggerConfig.InfoTextColor.Fprint(
 		os.Stderr,
@@ -45,7 +44,6 @@ func Infof(format string, arguments ...any) {
 }
 
 // Infoln prints an informational message followed by a newline.
-
 func Infoln(arguments ...any) {
 	loggerConfig.InfoTextColor.Fprint(
 		os.Stderr,

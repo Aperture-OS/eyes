@@ -83,12 +83,8 @@ func SetLoggerConfiguration(config LoggerConfiguration) {
 	loggerConfig = config
 }
 
-/****************************************************/
-//
 // buildPrefixString
 // Expands PrefixTemplate into a concrete prefix string
-//
-/****************************************************/
 func buildPrefixString(logLevel string) string {
 	prefix := loggerConfig.PrefixTemplate
 

@@ -24,7 +24,6 @@ import (
 )
 
 // Fatal prints a fatal error message and exits with status code 1.
-
 func Fatal(arguments ...any) {
 	loggerConfig.FatalTextColor.Fprint(
 		os.Stderr,
@@ -36,7 +35,6 @@ func Fatal(arguments ...any) {
 }
 
 // Fatalf prints a formatted fatal error message and exits with status code 1.
-
 func Fatalf(format string, arguments ...any) {
 	loggerConfig.FatalTextColor.Fprint(
 		os.Stderr,
@@ -49,7 +47,6 @@ func Fatalf(format string, arguments ...any) {
 
 // Fatalln prints a fatal error message followed by a newline
 // and exits with status code 1.
-
 func Fatalln(arguments ...any) {
 	loggerConfig.FatalTextColor.Fprint(
 		os.Stderr,

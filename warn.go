@@ -24,7 +24,6 @@ import (
 )
 
 // Warn prints a warning message.
-
 func Warn(arguments ...any) {
 	loggerConfig.WarnTextColor.Fprint(
 		os.Stderr,
@@ -35,7 +34,6 @@ func Warn(arguments ...any) {
 }
 
 // Warnf prints a formatted warning message.
-
 func Warnf(format string, arguments ...any) {
 	loggerConfig.WarnTextColor.Fprint(
 		os.Stderr,
@@ -46,7 +44,6 @@ func Warnf(format string, arguments ...any) {
 }
 
 // Warnln prints a warning message followed by a newline.
-
 func Warnln(arguments ...any) {
 	loggerConfig.WarnTextColor.Fprint(
 		os.Stderr,
