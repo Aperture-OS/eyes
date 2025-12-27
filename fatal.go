@@ -23,15 +23,8 @@ import (
 	"os"
 )
 
-/****************************************************/
-//
-// FATAL logging functions
-//
-/****************************************************/
+// Fatal prints a fatal error message and exits with status code 1.
 
-/*
-Fatal prints a fatal error message and exits with status code 1.
-*/
 func Fatal(arguments ...any) {
 	loggerConfig.FatalTextColor.Fprint(
 		os.Stderr,
@@ -42,9 +35,8 @@ func Fatal(arguments ...any) {
 	os.Exit(1)
 }
 
-/*
-Fatalf prints a formatted fatal error message and exits with status code 1.
-*/
+// Fatalf prints a formatted fatal error message and exits with status code 1.
+
 func Fatalf(format string, arguments ...any) {
 	loggerConfig.FatalTextColor.Fprint(
 		os.Stderr,
@@ -55,10 +47,9 @@ func Fatalf(format string, arguments ...any) {
 	os.Exit(1)
 }
 
-/*
-Fatalln prints a fatal error message followed by a newline
-and exits with status code 1.
-*/
+// Fatalln prints a fatal error message followed by a newline
+// and exits with status code 1.
+
 func Fatalln(arguments ...any) {
 	loggerConfig.FatalTextColor.Fprint(
 		os.Stderr,

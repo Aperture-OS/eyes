@@ -23,15 +23,7 @@ import (
 	"os"
 )
 
-/****************************************************/
-//
-// INFO logging functions
-//
-/****************************************************/
-
-/*
-Info prints an informational message using default formatting.
-*/
+// Info prints an informational message using default formatting.
 func Info(arguments ...any) {
 	loggerConfig.InfoTextColor.Fprint(
 		os.Stderr,
@@ -41,9 +33,8 @@ func Info(arguments ...any) {
 	fmt.Fprintln(os.Stderr)
 }
 
-/*
-Infof prints a formatted informational message.
-*/
+// Infof prints a formatted informational message.
+
 func Infof(format string, arguments ...any) {
 	loggerConfig.InfoTextColor.Fprint(
 		os.Stderr,
@@ -53,9 +44,8 @@ func Infof(format string, arguments ...any) {
 	fmt.Fprintln(os.Stderr)
 }
 
-/*
-Infoln prints an informational message followed by a newline.
-*/
+// Infoln prints an informational message followed by a newline.
+
 func Infoln(arguments ...any) {
 	loggerConfig.InfoTextColor.Fprint(
 		os.Stderr,

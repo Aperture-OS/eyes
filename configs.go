@@ -24,12 +24,8 @@ import (
 	"time"
 )
 
-/****************************************************/
-//
 // LoggerConfiguration
 // Holds all user-configurable settings for the logger
-//
-/****************************************************/
 type LoggerConfiguration struct {
 	// DisplayName is substituted into {display_name}
 	// Example: "DEBUG", "Blink", "Aperture"
@@ -55,12 +51,8 @@ type LoggerConfiguration struct {
 	FatalTextColor   *color.Color
 }
 
-/****************************************************/
-//
 // DefaultLoggerConfiguration
 // Used unless overridden via SetLoggerConfiguration
-//
-/****************************************************/
 var loggerConfig = LoggerConfiguration{
 	DisplayName:     "DEBUG",
 	PrefixTemplate:  "[{display_name}] {timestamp} {log_level}: ",
@@ -72,8 +64,6 @@ var loggerConfig = LoggerConfiguration{
 	FatalTextColor:   color.New(color.FgRed),
 }
 
-/****************************************************/
-//
 // SetLoggerConfiguration
 // Replaces the global logger configuration
 // example:
@@ -89,7 +79,6 @@ var loggerConfig = LoggerConfiguration{
 		FatalTextColor:   color.New(color.FgRed, color.Bold),
 	})
 */
-/****************************************************/
 func SetLoggerConfiguration(config LoggerConfiguration) {
 	loggerConfig = config
 }

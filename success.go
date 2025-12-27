@@ -23,15 +23,7 @@ import (
 	"os"
 )
 
-/****************************************************/
-//
-// SUCCESS logging functions
-//
-/****************************************************/
-
-/*
-Success prints a success message.
-*/
+// Success prints a success message.
 func Success(arguments ...any) {
 	loggerConfig.SuccessTextColor.Fprint(
 		os.Stderr,
@@ -41,9 +33,9 @@ func Success(arguments ...any) {
 	fmt.Fprintln(os.Stderr)
 }
 
-/*
-Successf prints a formatted success message.
-*/
+
+// Successf prints a formatted success message.
+
 func Successf(format string, arguments ...any) {
 	loggerConfig.SuccessTextColor.Fprint(
 		os.Stderr,
@@ -53,9 +45,9 @@ func Successf(format string, arguments ...any) {
 	fmt.Fprintln(os.Stderr)
 }
 
-/*
-Successln prints a success message followed by a newline.
-*/
+
+// Successln prints a success message followed by a newline.
+
 func Successln(arguments ...any) {
 	loggerConfig.SuccessTextColor.Fprint(
 		os.Stderr,

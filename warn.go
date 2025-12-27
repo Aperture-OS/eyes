@@ -23,15 +23,8 @@ import (
 	"os"
 )
 
-/****************************************************/
-//
-// WARN logging functions
-//
-/****************************************************/
+// Warn prints a warning message.
 
-/*
-Warn prints a warning message.
-*/
 func Warn(arguments ...any) {
 	loggerConfig.WarnTextColor.Fprint(
 		os.Stderr,
@@ -41,9 +34,8 @@ func Warn(arguments ...any) {
 	fmt.Fprintln(os.Stderr)
 }
 
-/*
-Warnf prints a formatted warning message.
-*/
+// Warnf prints a formatted warning message.
+
 func Warnf(format string, arguments ...any) {
 	loggerConfig.WarnTextColor.Fprint(
 		os.Stderr,
@@ -53,9 +45,8 @@ func Warnf(format string, arguments ...any) {
 	fmt.Fprintln(os.Stderr)
 }
 
-/*
-Warnln prints a warning message followed by a newline.
-*/
+// Warnln prints a warning message followed by a newline.
+
 func Warnln(arguments ...any) {
 	loggerConfig.WarnTextColor.Fprint(
 		os.Stderr,
