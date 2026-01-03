@@ -50,5 +50,5 @@ func main() {
 
 ## License
 
-This project is licensed under the **GNU General Public License v3.0**. See [LICENSE](LICENSE) for details.
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
 Copyright © ApertureOS 2025-2026
